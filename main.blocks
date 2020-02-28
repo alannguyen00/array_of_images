@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="4{,d,$Feu$atReOOc=Pt">Player</variable><variable type="KIND_SpriteKind" id="g,m9de$sQ^)~-p=tr,Hb">Projectile</variable><variable type="KIND_SpriteKind" id="p);(mQGPb#TzW-.TNx)P">Food</variable><variable type="KIND_SpriteKind" id="n%5WQ`nv,N!Z}Y15zlti">Enemy</variable><variable id="pnCRKnFJgCJ;h~},aX{N">list</variable><variable id="m*zjbmX}(B?1OL.8$NYD">duck</variable><variable id="Ssgb~R;2Xu!]Dl1u;h9Q">monkey</variable><variable id="e4v%a1E?Y:rC_8Iq^gZE">mySprite</variable><variable id="lGeT.}`YabGnNMQG@}Vd">monkey pics</variable><variable id="w^G(u1-uaKk,L86M[T.,">count</variable></variables><block type="pxt-on-start" x="30" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="pnCRKnFJgCJ;h~},aX{N">list</field><value name="VALUE"><block type="lists_create_with" inline="false"><mutation items="8"/><value name="ADD0"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="image_picker"><field name="image">sprites.builtin.forestMonkey0</field></block></value><value name="ADD1"><shadow type="math_number"><field name="NUM">2</field></shadow><block type="image_picker"><field name="image">sprites.builtin.forestMonkey1</field></block></value><value name="ADD2"><shadow type="math_number"><field name="NUM">3</field></shadow><block type="image_picker"><field name="image">sprites.builtin.forestMonkey2</field></block></value><value name="ADD3"><shadow type="math_number"><field name="NUM">4</field></shadow><block type="image_picker"><field name="image">sprites.builtin.forestMonkey3</field></block></value><value name="ADD4"><shadow type="math_number"><field name="NUM">5</field></shadow><block type="image_picker"><field name="image">sprites.builtin.forestMonkey4</field></block></value><value name="ADD5"><shadow type="math_number"><field name="NUM">6</field></shadow><block type="image_picker"><field name="image">sprites.builtin.forestMonkey5</field></block></value><value name="ADD6"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="image_picker"><field name="image">sprites.builtin.forestMonkey6</field></block></value><value name="ADD7"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="image_picker"><field name="image">sprites.builtin.forestMonkey10</field></block></value></block></value><next><block type="variables_set"><field name="VAR" id="Ssgb~R;2Xu!]Dl1u;h9Q">monkey</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get"><value name="LIST"><block type="variables_get"><field name="VAR" id="pnCRKnFJgCJ;h~},aX{N">list</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow></value></block></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></statement></block><block type="gameinterval" x="0" y="690"><value name="period"><shadow type="timePicker"><field name="ms">100</field></shadow></value><statement name="HANDLER"><block type="spritesetimage"><value name="sprite"><block type="variables_get"><field name="VAR" id="Ssgb~R;2Xu!]Dl1u;h9Q">monkey</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get"><value name="LIST"><block type="variables_get"><field name="VAR" id="pnCRKnFJgCJ;h~},aX{N">list</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_modulo"><value name="DIVIDEND"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get"><field name="VAR" id="w^G(u1-uaKk,L86M[T.,">count</field></block></value><value name="DIVISOR"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="lists_length"><value name="VALUE"><block type="variables_get"><field name="VAR" id="pnCRKnFJgCJ;h~},aX{N">list</field></block></value></block></value></block></value></block></value><next><block type="variables_change"><field name="VAR" id="w^G(u1-uaKk,L86M[T.,">count</field><value name="VALUE"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></xml>
